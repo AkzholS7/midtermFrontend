@@ -1,21 +1,21 @@
 <template>
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Akzhol msg="Welcome to My Vue.js App"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Akzhol from './components/Akzhol.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Akzhol
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif, Avenir;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

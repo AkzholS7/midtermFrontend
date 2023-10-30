@@ -102,6 +102,7 @@ export default {
 .calculator{
   cursor: pointer;
   margin: 0 auto;
+
   width: 500px;
   font-size: 70px;
   display: grid;
