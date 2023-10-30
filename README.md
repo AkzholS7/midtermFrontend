@@ -37,7 +37,10 @@ To run the project in development mode with hot-reloading, use the following com
 
 npm run serve
 ```
-![And running state of my Application looks like as below:](/screenshotOfApp.png)
+# Screenshots
+
+
+![And running state of my Application looks like as below:](image/screenshotOfApp.png)
 
 
 
