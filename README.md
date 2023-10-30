@@ -42,5 +42,7 @@ npm run serve
 
 ![And running state of my Application looks like as below:](image/screenshotOfApp.png)
 
+![And running state of my Application looks like as below:](image/screenshotOfApp.png)
+
 
 
