@@ -1,8 +1,10 @@
 <template>
+  <img src="@/assets/alatoo-logo.png" alt="Logo" class="logo" />
   <div class="calculator">
     <div class="display">
       <div v-if="state">
         {{ current || 0}}
+        
       </div>
       <div v-else>
         <ul>
@@ -11,8 +13,15 @@
           </li>
         </ul>
       </div>
+     
+      <div class="container">
+    
+    <div class="calculator">
+    </div>
+  </div>
 
     </div>
+    
     <div @click="clear" class="btn">C</div>
     <div @click="sign()" class="btn operator">+/-</div>
     <div @click="persent('%')" class="btn operator">%</div>
@@ -33,7 +42,6 @@
     <div @click="dot()" class="btn ">.</div>
     <div @click="equal()" class="btn operator">=</div>
     <div @click="histories()" class="btn ">history</div>
-
   </div>
 </template>
 
@@ -94,27 +102,49 @@ export default {
 .calculator{
   cursor: pointer;
   margin: 0 auto;
-  width: 400px;
-  font-size: 40px;
+  width: 500px;
+  font-size: 70px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: minmax(50px, auto);
 }
 .display{
   grid-column: 1 / 5;
-  background-color: #333;
-  color: white;
+  background-color: #8a969f;
+  color: rgb(57, 53, 53);
 }
 .btn{
-  background-color: #F2F2F2;
-  border: 1px solid #999;
+  background-color: #ecf0f1;
+  border: 1px solid #c7bdbe;
 }
 .zero{
   grid-column: 1 / 3;
 }
 .operator{
-  background-color: orange;
+  background-color: #110a44;
   color: white;
+}
+.logo {
+  /* position: absolute; */
+  top: 20px; /* Adjust this value to position the logo vertically */
+  bottom: 40px;
+  margin-bottom: 40px;
+  left: 942px; /* Adjust this value to position the logo horizontally */
+  width: 100px; /* Adjust the width of the logo */
+  height: 100px; /* Adjust the height of the logo */
+  animation: zoomInOut 4s ease-in-out infinite;
+
+}
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 
