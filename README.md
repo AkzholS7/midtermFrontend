@@ -18,7 +18,7 @@ git clone https://github.com/your-username/AkzholsVueCalculator.git
 2. Navigate to the project directory:
 ```
 
-cd AkzholsVueCalculator
+cd midtermFrontend
 ```
 
 3. Install the project dependencies by running:
